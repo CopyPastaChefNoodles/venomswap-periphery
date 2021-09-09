@@ -4,17 +4,17 @@ import { deployContract } from 'ethereum-waffle'
 
 import { expandTo18Decimals } from './utilities'
 
-import UniswapV2Factory from '@venomswap/core/build/UniswapV2Factory.json'
-import IUniswapV2Pair from '@venomswap/core/build/IUniswapV2Pair.json'
+import UniswapV2Factory from '@copypastachef/core/build/contracts/UniswapV2Factory.json'
+import IUniswapV2Pair from '@copypastachef/core/build/contracts/IUniswapV2Pair.json'
 
-import ERC20 from '../../build/ERC20.json'
-import WETH9 from '../../build/WETH9.json'
+import ERC20 from '../../build/contracts/ERC20.json'
+import WETH9 from '../../build/contracts/WETH9.json'
 import UniswapV1Exchange from '../../build/UniswapV1Exchange.json'
 import UniswapV1Factory from '../../build/UniswapV1Factory.json'
-import UniswapV2Router01 from '../../build/UniswapV2Router01.json'
-import UniswapV2Migrator from '../../build/UniswapV2Migrator.json'
-import UniswapV2Router02 from '../../build/UniswapV2Router02.json'
-import RouterEventEmitter from '../../build/RouterEventEmitter.json'
+import UniswapV2Router01 from '../../build/contracts/UniswapV2Router01.json'
+import UniswapV2Migrator from '../../build/contracts/UniswapV2Migrator.json'
+import UniswapV2Router02 from '../../build/contracts/UniswapV2Router02.json'
+import RouterEventEmitter from '../../build/contracts/RouterEventEmitter.json'
 
 const overrides = {
   gasLimit: 9999999

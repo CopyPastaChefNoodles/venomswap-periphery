@@ -1,3 +1,8 @@
 build/
 node_modules/
 flatten/
+.env
+.env-template
+migrations/*
+truffle-config.js
+*.txt

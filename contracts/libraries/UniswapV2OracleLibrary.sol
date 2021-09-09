@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity =0.6.12;
 
-import '@venomswap/core/contracts/interfaces/IUniswapV2Pair.sol';
+import '@copypastachef/core/contracts/interfaces/IUniswapV2Pair.sol';
 import '@venomswap/lib/contracts/libraries/FixedPoint.sol';
 
 // library with helper methods for oracles that are concerned with computing average prices

@@ -1,5 +1,5 @@
 {
-  "name": "@venomswap/periphery",
+  "name": "@copypastachef/periphery",
   "version": "1.0.0",
   "description": "🎚 Peripheral smart contracts for interacting with the Venomswap exchanges",
   "engines": {
@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "@venomswap/lib": "1.0.0",
-    "@venomswap/core": "1.0.0"
+    "@copypastachef/core": "1.0.0"
   },
   "devDependencies": {
     "@types/chai": "^4.2.6",
@@ -30,7 +30,17 @@
     "rimraf": "^3.0.0",
     "solc": "0.6.12",
     "ts-node": "^8.5.4",
-    "typescript": "^3.7.3"
+    "typescript": "^3.7.3",
+    "@ethersproject/solidity": "^5.1.0",
+    "@harmony-js/core": "^0.1.57",
+    "@harmony-js/utils": "^0.1.56",
+    "@truffle/hdwallet-provider": "^1.4.1",
+    "truffle": "^5.1.41",
+    "truffle-flattener": "^1.4.4",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "tslib": "^2.2.0",
+    "@openzeppelin/contracts": "^3.1.0",
+    "dotenv":"^10.0.0"
   },
   "scripts": {
     "lint": "yarn prettier ./test/*.ts --check",
@@ -38,7 +48,7 @@
     "clean": "rimraf ./build/",
     "copy-v1-artifacts": "ncp ./buildV1 ./build",
     "precompile": "yarn clean",
-    "compile": "waffle .waffle.json",
+    "compile": "truffle compile",
     "postcompile": "yarn copy-v1-artifacts",
     "pretest": "yarn compile",
     "test": "mocha",

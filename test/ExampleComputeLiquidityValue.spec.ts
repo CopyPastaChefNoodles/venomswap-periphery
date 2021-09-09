@@ -6,7 +6,7 @@ import { solidity, MockProvider, createFixtureLoader, deployContract } from 'eth
 import { expandTo18Decimals } from './shared/utilities'
 import { v2Fixture } from './shared/fixtures'
 
-import ExampleComputeLiquidityValue from '../build/ExampleComputeLiquidityValue.json'
+import ExampleComputeLiquidityValue from '../build/contracts/ExampleComputeLiquidityValue.json'
 
 chai.use(solidity)
 
@@ -249,7 +249,7 @@ describe('ExampleComputeLiquidityValue', () => {
             100,
             expandTo18Decimals(5)
           )
-        ).to.eq('12663')
+        ).to.eq('13044')
       })
 
       it('gas higher price', async () => {
@@ -261,7 +261,7 @@ describe('ExampleComputeLiquidityValue', () => {
             105,
             expandTo18Decimals(5)
           )
-        ).to.eq('13412')
+        ).to.eq('13793')
       })
 
       it('gas lower price', async () => {
@@ -273,7 +273,7 @@ describe('ExampleComputeLiquidityValue', () => {
             95,
             expandTo18Decimals(5)
           )
-        ).to.eq('13457')
+        ).to.eq('13838')
       })
 
       describe('after a swap', () => {
@@ -380,7 +380,7 @@ describe('ExampleComputeLiquidityValue', () => {
             100,
             expandTo18Decimals(5)
           )
-        ).to.eq('16890')
+        ).to.eq('17295')
       })
 
       it('gas higher price', async () => {
@@ -392,7 +392,7 @@ describe('ExampleComputeLiquidityValue', () => {
             105,
             expandTo18Decimals(5)
           )
-        ).to.eq('18379')
+        ).to.eq('18787')
       })
 
       it('gas lower price', async () => {
@@ -404,7 +404,7 @@ describe('ExampleComputeLiquidityValue', () => {
             95,
             expandTo18Decimals(5)
           )
-        ).to.eq('18310')
+        ).to.eq('18718')
       })
 
       describe('after a swap', () => {
